@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="javaee7-jaxrs-thymeleaf-wildfly:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="isucon2-javaee7-jaxrs-thymeleaf-1.0.war">
+      <element id="artifact" artifact-name="javaee7-jaxrs-thymeleaf-wildfly:war exploded" />
+    </root>
+  </artifact>
+</component>

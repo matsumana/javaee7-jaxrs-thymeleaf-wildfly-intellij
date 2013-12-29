@@ -1,0 +1,18 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-3.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="utf-8" />
+        <title>isucon 2</title>
+        <link type="text/css" rel="stylesheet" href="/css/ui-lightness/jquery-ui-1.8.24.custom.css" />
+        <link type="text/css" rel="stylesheet" href="/css/isucon2.css" />
+        <script type="text/javascript" src="/js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-ui-1.8.24.custom.min.js"></script>
+        <script type="text/javascript" src="/js/isucon2.js"></script>
+    </head>
+    <body>
+        <div id="content" th:fragment="content">
+            <h2>予約完了</h2>
+            <span class="result" data-result="success">&quot;<span class="seat" th:text="${seatId}">aaa</span>&quot;の席を購入しました。</span>
+        </div>
+    </body>
+</html>

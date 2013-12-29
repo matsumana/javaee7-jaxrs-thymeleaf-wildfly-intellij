@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="javaee7-jaxrs-thymeleaf-wildfly:war exploded">
+    <output-path>$PROJECT_DIR$/target/isucon2-javaee7-jaxrs-thymeleaf-1.0</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="javaee7-jaxrs-thymeleaf-wildfly/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="javaee7-jaxrs-thymeleaf-wildfly" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.0.13" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.0.13" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.5" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf:2.0.17" />
+          <element id="library" level="project" name="Maven: ognl:ognl:3.0.6" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.16.1-GA" />
+          <element id="library" level="project" name="Maven: org.tuckey:urlrewritefilter:4.0.3" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.26" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

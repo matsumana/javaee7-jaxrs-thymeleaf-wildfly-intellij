@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.0.dtd">
+<urlrewrite>
+    <!-- service -->
+    <rule>
+        <from>^/$</from>
+        <to>/rest/list</to>
+    </rule>
+    <rule>
+        <from>^/artist/(.+)$</from>
+        <to>/rest/artist/$1</to>
+    </rule>
+    <rule>
+        <from>^/ticket/(.+)$</from>
+        <to>/rest/ticket/$1</to>
+    </rule>
+    <rule>
+        <from>^/buy$</from>
+        <to>/rest/buy</to>
+    </rule>
+
+    <!-- admin -->
+    <rule>
+        <from>^/admin$</from>
+        <to>/rest/admin</to>
+    </rule>
+    <rule>
+        <from>^/admin/order.csv$</from>
+        <to>/rest/admin/orders</to>
+    </rule>
+</urlrewrite>
