@@ -65,6 +65,8 @@ public class ThymeleafMessageBodyWriter implements
             Context context = new Context();
             Map<String, Object> variables = new HashMap<>();
             BeanInfo beanInfo = Introspector.getBeanInfo(type);
+
+            System.out.println("put start");
             for (PropertyDescriptor pd : beanInfo.getPropertyDescriptors()) {
                 Method readMethod = pd.getReadMethod();
                 if (readMethod != null) {
@@ -73,10 +75,14 @@ public class ThymeleafMessageBodyWriter implements
                     variables.put(key, value);
                 }
             }
+            System.out.println("put end");
             context.setVariables(variables);
             Writer writer = new OutputStreamWriter(entityStream);
+            System.out.println("TemplateEngine process start");
             templateEngine.process(templateName, context, writer);
+            System.out.println("TemplateEngine process end");
             writer.flush();
+            System.out.println("flush end");
         } catch (IllegalAccessException | IntrospectionException | InvocationTargetException ex) {
             throw new WebApplicationException(ex.getCause(), Response.Status.INTERNAL_SERVER_ERROR);
         }
